@@ -1,6 +1,5 @@
-from src.tools.tools import web_search , scrape_url
-from rich import print
+from src.pipelines.pipeline import run_search_pipeline
+from src.agents.agents import writer_agent
 
-search_response = web_search.invoke("latest news of Tunisia")
-scraping_response = scrape_url.invoke("https://www.aljazeera.com/where/tunisia")
-print(scraping_response)
+
+agent_response = run_search_pipeline("the latest news of GTA VI")

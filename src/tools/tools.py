@@ -34,7 +34,7 @@ def web_search(query : str ) -> str :
 
     """
 
-    result = tavily_client.search(query=query , max_results=5)
+    result = tavily_client.search(query=query , max_results=1)
 
     useful_data :list[dict] = []
 
